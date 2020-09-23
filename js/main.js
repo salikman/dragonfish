@@ -18,7 +18,7 @@
 		$img.data('src-orig', $img.attr('src'));
 
 		// Fixed nav
-		if (wScroll > 1) {
+		if (wScroll > 1 || $('body').hasClass('not-is-home')) {
 			$('#nav').addClass('fixed-nav');
 			$img.attr('src', $img.data('logo-red'));
 		} else {
