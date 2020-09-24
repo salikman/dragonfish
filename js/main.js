@@ -11,8 +11,9 @@
 	});
 	///////////////////////////
 	// On Scroll
-	$(window).on('scroll load', function() {
+	$(window).on('scroll load resize', function() {
 		var wScroll = $(this).scrollTop();
+		
 
 		const $img = $('.logo__link img');
 		$img.data('src-orig', $img.attr('src'));
@@ -24,6 +25,12 @@
 		} else {
 			$('#nav').removeClass('fixed-nav');
 			$img.attr('src', $img.data('logo'));
+		}
+
+		// tabs
+		var wWidth = $(window).width();
+		if (wWidth < 769) {
+			$("#tabs").tabs();
 		}
 	});
 
