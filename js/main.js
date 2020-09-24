@@ -16,15 +16,18 @@
 		
 
 		const $img = $('.logo__link img');
+
 		$img.data('src-orig', $img.attr('src'));
 
 		// Fixed nav
-		if (wScroll > 1 || $('body').hasClass('not-is-home')) {
+		if (wScroll > 1) {
 			$('#nav').addClass('fixed-nav');
-			$img.attr('src', $img.data('logo-red'));
+			if ($('body').hasClass('is-home') == true) {
+				$('#logo').addClass('logo__link--red');
+			}
 		} else {
 			$('#nav').removeClass('fixed-nav');
-			$img.attr('src', $img.data('logo'));
+			$('#logo').removeClass('logo__link--red');
 		}
 
 		// tabs
