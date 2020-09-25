@@ -1,6 +1,4 @@
-"use strict";
 (function () {
-
 	// VARIABLES
 	const timeline = document.querySelector(".timeline ol"),
 		elH = document.querySelectorAll(".timeline li > div"),
@@ -95,11 +93,11 @@
 	}
 
 	// ADD SWIPE SUPPORT FOR TOUCH DEVICES
-	// function setSwipeFn(tl, prev, next) {
-	// 	const hammer = new Hammer(tl);
-	// 	hammer.on("swipeleft", () => next.click());
-	// 	hammer.on("swiperight", () => prev.click());
-	// }
+	function setSwipeFn(tl, prev, next) {
+		const hammer = new Hammer(tl);
+		hammer.on("swipeleft", () => next.click());
+		hammer.on("swiperight", () => prev.click());
+	}
 
 	// ADD BASIC KEYBOARD FUNCTIONALITY
 	function setKeyboardFn(prev, next) {
@@ -120,46 +118,3 @@
 	}
 
 })();
-
-
-(function($) {
-    ///////////////////////////
-	// Btn nav collapse
-	$('#nav .navbar__collapse').on('click', function() {
-		$('#nav').toggleClass('open');
-    });
-    $('#nav .lang__active').on('click', function() {
-		$('#nav').toggleClass('open-lang');
-	});
-	///////////////////////////
-	// On Scroll
-	$(window).on('scroll load resize', function() {
-		var wScroll = $(this).scrollTop();
-
-		// Fixed nav
-		if (wScroll > 1) {
-			$('#nav').addClass('fixed-nav');
-			if ($('body').hasClass('is-home') == true) {
-				$('#logo').addClass('logo__link--red');
-			}
-			$('#request').addClass('request--bg');
-		} else {
-			$('#nav').removeClass('fixed-nav');
-			$('#logo').removeClass('logo__link--red');
-			$('#request').removeClass('request--bg');
-		}
-
-		// tabs
-		var wWidth = $(this).width();
-
-		var sld = function() {
-			if (wWidth < 769) {
-				$("#tabs").tabs();
-			}
-		}
-
-		$(window).resize(sld);
-	});
-
-})(jQuery);
-
