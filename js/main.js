@@ -1,5 +1,6 @@
 "use strict";
 
+
 (function($) {
     ///////////////////////////
 	// Btn nav collapse
@@ -13,11 +14,6 @@
 	// On Scroll
 	$(window).on('scroll load resize', function() {
 		var wScroll = $(this).scrollTop();
-		
-
-		const $img = $('.logo__link img');
-
-		$img.data('src-orig', $img.attr('src'));
 
 		// Fixed nav
 		if (wScroll > 1) {
@@ -25,13 +21,16 @@
 			if ($('body').hasClass('is-home') == true) {
 				$('#logo').addClass('logo__link--red');
 			}
+			$('#request').addClass('request--bg');
 		} else {
 			$('#nav').removeClass('fixed-nav');
 			$('#logo').removeClass('logo__link--red');
+			$('#request').removeClass('request--bg');
 		}
 
 		// tabs
-		var wWidth = $(window).width();
+		var wWidth = $(this).width();
+
 		if (wWidth < 769) {
 			$("#tabs").tabs();
 		}
