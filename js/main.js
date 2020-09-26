@@ -9,7 +9,7 @@
 		arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
 		firstItem = document.querySelector(".timeline li:first-child"),
 		lastItem = document.querySelector(".timeline li:last-child"),
-		xScrolling = 280,
+		xScrolling = 300,
 		disabledClass = "disabled";
 
 	// START
@@ -18,7 +18,7 @@
 	function init() {
 		setEqualHeights(elH);
 		animateTl(xScrolling, arrows, timeline);
-		setSwipeFn(timeline, arrowPrev, arrowNext);
+		// setSwipeFn(timeline, arrowPrev, arrowNext);
 		setKeyboardFn(arrowPrev, arrowNext);
 	}
 
@@ -133,20 +133,47 @@
 	});
 	///////////////////////////
 	// On Scroll
+	// $(window).on("scroll", function() {
+	// 	var wScroll = $(this).scrollTop();
+	// 	var doc = $('#svg').getSVGDocument();
+	// 	var paths = doc.querySelectorAll("path");
+	// 	if (wScroll > 1) {
+	// 		for (let i = 0; i < paths.length; ++i) {
+	// 			paths[i].setAttribute('style', 'fill:#AC252B !important');
+	// 		}
+	// 		console.log(paths);
+	// 	} else {
+	// 		for (let i = 0; i < paths.length; ++i) {
+	// 			paths[i].setAttribute('style', 'fill:#ffffff !important');
+	// 		}
+	// 	}
+		
+	// });
+
+
 	$(window).on('scroll load resize', function() {
 		var wScroll = $(this).scrollTop();
 
-		// Fixed nav
 		if (wScroll > 1) {
 			$('#nav').addClass('fixed-nav');
+
+			$('.logo__link img').attr('src', 'img/svg/home/logo-red.svg');
+			// $img.attr('src', $img.data('logo-red'));
+
 			if ($('body').hasClass('is-home') == true) {
-				$('#logo').addClass('logo__link--red');
+				// $('#logo').addClass('logo__link--red');
 			}
 			$('#request').addClass('request--bg');
 		} else {
+			$('.logo__link img').attr('src', 'img/svg/home/logo-white.svg');
+
 			$('#nav').removeClass('fixed-nav');
-			$('#logo').removeClass('logo__link--red');
+			// $('#logo').removeClass('logo__link--red');
 			$('#request').removeClass('request--bg');
+			
+		}
+		if ($('body').hasClass('not-is-home') == true) {
+			$('.logo__link img').attr('src', 'img/svg/home/logo-red.svg');
 		}
 
 		// tabs
@@ -160,6 +187,7 @@
 
 		$(window).resize(sld);
 	});
+
 
 })(jQuery);
 
