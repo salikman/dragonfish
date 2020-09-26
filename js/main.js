@@ -131,26 +131,11 @@
     $('#nav .lang__active').on('click', function() {
 		$('#nav').toggleClass('open-lang');
 	});
+	$(window).on('load', function() {
+        $("#preloader").delay(700).fadeOut();
+    });
 	///////////////////////////
 	// On Scroll
-	// $(window).on("scroll", function() {
-	// 	var wScroll = $(this).scrollTop();
-	// 	var doc = $('#svg').getSVGDocument();
-	// 	var paths = doc.querySelectorAll("path");
-	// 	if (wScroll > 1) {
-	// 		for (let i = 0; i < paths.length; ++i) {
-	// 			paths[i].setAttribute('style', 'fill:#AC252B !important');
-	// 		}
-	// 		console.log(paths);
-	// 	} else {
-	// 		for (let i = 0; i < paths.length; ++i) {
-	// 			paths[i].setAttribute('style', 'fill:#ffffff !important');
-	// 		}
-	// 	}
-		
-	// });
-
-
 	$(window).on('scroll load resize', function() {
 		var wScroll = $(this).scrollTop();
 
