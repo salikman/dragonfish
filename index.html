@@ -19,7 +19,8 @@
 				<!-- logo -->
 				<div class="navbar__logo logo">
 					<a href="/" class="logo__link" id="logo">
-						<img src="img/svg/home/logo-white.svg" alt="Dranonfish" class="logo__img">
+						<img src="img/svg/home/logo-white.svg" data-inverse="img/svg/home/logo-red.svg" alt="Dranonfish" class="logo__img">
+						<!-- <img src="img/svg/home/logo-white.svg" alt="Dranonfish" class="logo__img"> -->
 					</a>
 				</div>
 				<!-- collapse -->
@@ -52,9 +53,7 @@
     <main id="main">
         <!-- intro -->
         <section class="intro">
-    <div class="intro-bg" style="background-image: url('img/bg-main.jpg')">
-        <div class="overlay"></div>
-    </div>
+    <div class="intro-bg"></div>
     <div class="container">
         <div class="intro__wrapper">
             <h1 class="intro__title">PARTNERING TO ACHIEVE THE ULTIMATE GAMING EXPERIENCE</h1>
@@ -84,7 +83,7 @@
             <h2 class="what-we-do__title section-title">WHAT WE DO</h2>
             <p class="what-we-do__description">As the independent B2B division of 888, Dragonfish is home to the world’s leading bingo network, providing bingo software to some of the biggest names in bingo. We power our partners’ success by combining engaging and dynamic game content together with our advanced features and experience of building strong social and community features into our partners’ bingo sites. Our partners enjoy a strategic partnership complete with comprehensive end-to-end service; global reach, resources and contacts; and specific experience across local markets.</p>
             <div class="ball">
-                <div class="ball-1"><img src="img/6.png" width="154px" alt=""></div>
+                <div class="ball-1"><img src="img/ball-6.svg"></div>
                 <div class="ball-2"><img src="img/42.png" width="200px" alt=""></div>
                 <div class="ball-7"><img src="img/75.png" width="96px" alt=""></div>
                 <div class="ball-8"><img src="img/56.png" width="123px" alt=""></div>
@@ -94,12 +93,12 @@
 </section>
         <!-- products -->
         <section class="products">
-    <div>
-        <span class="vector vector-1"></span>
-        <span class="vector vector-2"></span>
-        <span class="vector vector-3"></span>
-    </div>
     <div class="container">
+        <div class="vector">
+            <img class="products-1" src="img/svg/vector/products-1.svg">
+            <img class="products-2" src="img/svg/vector/products-2.svg">
+            <img class="products-3" src="img/svg/vector/products-4.svg">
+        </div>
         <div class="products__wrapper">
             <div class="products__text">
                 <h2 class="products__title section-title">Our Products</h2>
@@ -114,12 +113,12 @@
 </section>
         <!-- services -->
         <section class="services">
-    <div>
-        <span class="vector vector-4"></span>
-        <span class="vector vector-5"></span>
-        <span class="vector vector-6"></span>
-    </div>
     <div class="container">
+        <div class="vector">
+            <img class="services-1" src="img/svg/vector/services-1.svg">
+            <img class="services-2" src="img/svg/vector/services-4.svg">
+            <img class="services-3" src="img/svg/vector/services-3.svg">
+        </div>
         <div class="services__wrapper">
             <div class="services__text">
                 <h2 class="services__title section-title">SERVICES</h2>
@@ -134,10 +133,12 @@
 </section>
         <!-- operations -->
         <section class="operations">
-    <div>
-        <span class="vector vector-7"></span>
-    </div>
     <div class="container">
+        <div class="vector">
+            <img class="operations-1" src="img/svg/vector/operations-1.svg">
+            <img class="operations-2" src="img/svg/vector/operations-2.svg">
+            <img class="operations-3" src="img/svg/vector/operations-3.svg">
+        </div>
         <div class="operations__wrapper">
             <div class="operations__text">
                 <h2 class="operations__title section-title">OPERATIONS</h2>
@@ -156,8 +157,7 @@
     <div class="">
         <div class="numbers__list">
             <div class="numbers__item">
-                <div class="numbers__item_img">
-                    <object data="img/svg/home/home-feature-1.svg" type="image/svg+xml"></object>
+                <div class="numbers__item_img" style="background-image: url('img/svg/home/home-feature-1.svg');">
                 </div>
                 <div class="numbers__item_info">
                     <span>13</span>
@@ -165,8 +165,7 @@
                 </div>
             </div>
             <div class="numbers__item">
-                <div class="numbers__item_img">
-                    <object data="img/svg/home/home-feature-2.svg" type="image/svg+xml"></object>
+                <div class="numbers__item_img" style="background-image: url('img/svg/home/home-feature-2.svg');">
                 </div>
                 <div class="numbers__item_info">
                     <span>46</span>
@@ -174,8 +173,7 @@
                 </div>
             </div>
             <div class="numbers__item">
-                <div class="numbers__item_img">
-                    <object data="img/svg/home/home-feature-3.svg" type="image/svg+xml"></object>
+                <div class="numbers__item_img" style="background-image: url('img/svg/home/home-feature-3.svg');">
                 </div>
                 <div class="numbers__item_info">
                     <span>150</span>
@@ -183,8 +181,7 @@
                 </div>
             </div>
             <div class="numbers__item">
-                <div class="numbers__item_img">
-                    <object data="img/svg/home/home-feature-4.svg" type="image/svg+xml"></object>
+                <div class="numbers__item_img" style="background-image: url('img/svg/home/home-feature-4.svg');">
                 </div>
                 <div class="numbers__item_info">
                     <span>18</span>
@@ -234,30 +231,7 @@
 </footer>
     <!-- /.Footer -->
     <!-- Modal -->
-    <div id="preloader">
-    <div class="loader">
-        <span style="--i:1;"></span>
-        <span style="--i:2;"></span>
-        <span style="--i:3;"></span>
-        <span style="--i:4;"></span>
-        <span style="--i:5;"></span>
-        <span style="--i:6;"></span>
-        <span style="--i:7;"></span>
-        <span style="--i:8;"></span>
-        <span style="--i:9;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-    </div>
-</div>
+    
     <!-- /.Modal -->
     <!-- JS -->
     <script src="js/libs.min.js"></script>
