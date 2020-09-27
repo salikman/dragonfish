@@ -1,10 +1,15 @@
 "use strict";
 
 (function($) {
-
-	$(document).on('click', '#breadcrumb', function (e) {
-		window.location.href = "?"+Date.now()+"/about.html/#about-news";
-  	});
+	///////////////////////////
+	// Smooth scroll
+	$(".scroll a[href^='#']").on('click', function(e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 700);
+	});
     ///////////////////////////
 	// Btn nav collapse
 	$('#nav .navbar__collapse').on('click', function() {
