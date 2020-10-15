@@ -1,6 +1,14 @@
 "use strict";
 
 (function($) {
+	function getDocHeight() {
+		var D = document;
+		return Math.max(
+			D.body.scrollHeight, D.documentElement.scrollHeight,
+			D.body.offsetHeight, D.documentElement.offsetHeight,
+			D.body.clientHeight, D.documentElement.clientHeight
+		);
+	}
 	///////////////////////////
 	// Smooth scroll
 	$(".scroll a[href^='#']").on('click', function(e) {
@@ -44,6 +52,12 @@
 		// tabs
 		if (wWidth <= 768) {
 			$("#tabs").tabs();
+		}
+
+		if ($(this).scrollTop() > 1 && $(this).scrollTop()!==$(document).height()-$(window).height()) {
+			$('#request').addClass('request--bg');
+		} else {
+			$('#request').removeClass('request--bg');
 		}
 	});
 })(jQuery);
