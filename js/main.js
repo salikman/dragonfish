@@ -48,17 +48,18 @@
 		}
 		if ($('body').hasClass('not-is-home') == true) {
 			$logo.attr('src', $logo.data('inverse'));
+		} else {
+			if ($(this).scrollTop() > 1 && $(this).scrollTop()!==$(document).height()-$(window).height()) {
+				$('#request').addClass('request--bg');
+			} else {
+				$('#request').removeClass('request--bg');
+			}
 		}
 		// tabs
 		if (wWidth <= 768) {
 			$("#tabs").tabs();
 		}
 
-		if ($(this).scrollTop() > 1 && $(this).scrollTop()!==$(document).height()-$(window).height()) {
-			$('#request').addClass('request--bg');
-		} else {
-			$('#request').removeClass('request--bg');
-		}
 	});
 })(jQuery);
 
