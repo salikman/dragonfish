@@ -1,14 +1,6 @@
 "use strict";
 
 (function($) {
-	function getDocHeight() {
-		var D = document;
-		return Math.max(
-			D.body.scrollHeight, D.documentElement.scrollHeight,
-			D.body.offsetHeight, D.documentElement.offsetHeight,
-			D.body.clientHeight, D.documentElement.clientHeight
-		);
-	}
 	///////////////////////////
 	// Smooth scroll
 	$(".scroll a[href^='#']").on('click', function(e) {
@@ -46,6 +38,10 @@
 			$('#request').removeClass('request--bg');
 
 		}
+
+		// Smooth scroll
+		wScroll > 50 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+
 		if ($('body').hasClass('not-is-home') == true) {
 			$logo.attr('src', $logo.data('inverse'));
 		} else {
@@ -61,5 +57,18 @@
 		}
 
 	});
+
+	$('#back-to-top').on('click', function(){
+		$('body,html').animate({
+			scrollTop: 0
+		}, 600);
+	});
+	// $('#back-to-top').on('click', function (ev) {
+    //     $('#back-to-top').removeClass('on');
+
+    //     $('html,body').animate({scrollTop: 0}, 'slow');
+
+    //     return false;
+    // });
 })(jQuery);
 
