@@ -47,11 +47,8 @@
 		} else {
 			if ($(this).scrollTop() > 1 && $(this).scrollTop()!==$(document).height()-$(window).height()) {
 				$('#request').addClass('request--bg');
-			} else if ($(this).scrollTop() == 0) {
-				$('#request').removeClass('request--bg-white');
 			} else {
 				$('#request').removeClass('request--bg');
-				$('#request').addClass('request--bg-white');
 			}
 		}
 		// tabs
