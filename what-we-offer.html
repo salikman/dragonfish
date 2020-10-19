@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+<title>Hello World!</title>
+
+<link rel="stylesheet" href="css/libs.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="not-is-home">    
+    <!-- Header -->
+    <header class="header">
+	<div id="nav" class="navbar">
+		<div class="container">
+			<div class="navbar__wrapper">
+				<!-- logo -->
+				<div class="navbar__logo logo">
+					<a href="/" class="logo__link" id="logo">
+						<img src="img/svg/home/logo-white.svg" data-inverse="img/svg/home/logo-red.svg" alt="Dranonfish" class="logo__img">
+						<!-- <img src="img/svg/home/logo-white.svg" alt="Dranonfish" class="logo__img"> -->
+					</a>
+				</div>
+				<!-- collapse -->
+				<div class="navbar__collapse">
+					<span></span>
+				</div>
+				<!-- menu -->
+				<div class="navbar__nav">
+					<ul class="menu">
+						<li class="menu__item"><a href="/about.html" class="menu__link">About us</a></li>
+						<li class="menu__item"><a href="/what-we-offer.html" class="menu__link">What we offer</a></li>
+						<li class="menu__item"><a href="/contacts.html" class="menu__link">Contact us</a></li>
+					</ul>
+					<div class="lang">
+						<span class="lang__icon"><i class="fas fa-globe"></i></span>
+						<div class="lang__active">
+							<span>English</span>
+						</div>
+						<div class="lang__dropdown">
+							<a href="#">Русский</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <!-- /.Header -->
+    <!-- Main -->
+    <main id="main" class="transparent">
+        <!-- intro -->
+        <section class="intro">
+    <div class="ball">
+        <object class="ball-v-3" type="image/svg+xml" data="img/svg/what-we-offer/v-3.svg"></object>
+        <object class="ball-v-14" type="image/svg+xml" data="img/svg/what-we-offer/v-14.svg"></object>
+        <object class="ball-v-9" type="image/svg+xml" data="img/svg/what-we-offer/v-9.svg"></object>
+        <object class="ball-v-5" type="image/svg+xml" data="img/svg/what-we-offer/v-5.svg"></object>
+        <object class="ball-v-56" type="image/svg+xml" data="img/svg/what-we-offer/v-56.svg"></object>
+        <object class="ball-v-2" type="image/svg+xml" data="img/svg/what-we-offer/v-2.svg"></object>
+    </div>
+    <div class="container">
+        <div class="intro__wrapper">
+            <h1 class="intro__title">WE HELP BUILD SUCCESSFUL BUSINESSES</h1>
+            <p class="intro__description">Dragonfish is home to the world’s leading bingo network, providing bingo software to some of the biggest names in bingo. We power our partners’ success by combining engaging and dynamic game content together with our advanced chat features and experience of building strong social and community features into our partners’ bingo sites.</p>
+            <div class="intro__btn">
+                <div class="intro__scroll scroll">
+                    <a href="#section-scroll">
+                        <div class="scroll__anime">
+                            <object type="image/svg+xml" data="img/svg/scroll-silver.svg" width="20" height="36"></object>
+                            <div class="scroll__point"></div>
+                        </div>
+                        <span>Scroll for more</span>
+                    </a>
+                </div>
+                <div class="intro__request request" id="request">
+                    <a class="request__link" href="#">
+                        <span class="request__link--icon"><i class="fas fa-play"></i></span>
+                        <span class="request__link--text">REQUEST A DEMO</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- offer services -->
+        <section class="offer-services" id="section-scroll">
+    <div class="container">
+        <h2 class="offer-services__title section-title">Total gaming services</h2>
+        <p class="offer-services__description">The Dragonish platform is built as an open and modular platform, where you can enjoy our full platform solution and services or choose to utilize the different modular components and offerings and integrate them into your sites, suit to your needs.</p>
+        <div class="offer-services__list">
+            <div class="offer-services__item">
+                <div class="offer-services__item_img">
+                    <object type="image/svg+xml" data="img/svg/gaming-services/ico-1.svg"></object>
+                </div>
+                <div class="offer-services__item_title">
+                    <p>Bingo Variants</p>
+                </div>
+            </div>
+            <div class="offer-services__item">
+                <div class="offer-services__item_img">
+                    <object type="image/svg+xml" data="img/svg/gaming-services/ico-2.svg"></object>
+                </div>
+                <div class="offer-services__item_title">
+                    <p>Bingoflex</p>
+                </div>
+            </div>
+            <div class="offer-services__item">
+                <div class="offer-services__item_img">
+                    <object type="image/svg+xml" data="img/svg/gaming-services/ico-3.svg"></object>
+                </div>
+                <div class="offer-services__item_title">
+                    <p>Casinoflex</p>
+                </div>
+            </div>
+            <div class="offer-services__item">
+                <div class="offer-services__item_img">
+                    <object type="image/svg+xml" data="img/svg/gaming-services/ico-4.svg"></object>
+                </div>
+                <div class="offer-services__item_title">
+                    <p>Our Clients</p>
+                </div>
+            </div>
+            <div class="offer-services__item">
+                <div class="offer-services__item_img">
+                    <object type="image/svg+xml" data="img/svg/gaming-services/offer-service-5.svg"></object>
+                </div>
+                <div class="offer-services__item_title">
+                    <p>Games</p>
+                </div>
+            </div>
+            <div class="offer-services__item">
+                <div class="offer-services__item_img">
+                    <object type="image/svg+xml" data="img/svg/gaming-services/ico-6.svg"></object>
+                </div>
+                <div class="offer-services__item_title">
+                    <p>Back Office</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- offering -->
+        <section class="offering">
+    <div class="container">
+        <div class="vector">
+            <img class="vector-16" src="img/svg/vector/vector-16.svg" alt="">
+            <img class="vector-15" src="img/svg/vector/vector-15.svg" alt="">
+            <img class="vector-12" src="img/svg/vector/vector-12.svg" alt="">
+            <img class="vector-13" src="img/svg/vector/vector-13.svg" alt="">
+            <img class="vector-7" src="img/svg/vector/vector-7.svg" alt="">
+            <img class="vector-14" src="img/svg/vector/vector-7.svg" alt="">
+            <img class="vector-50" src="img/svg/vector/vector-50.svg" alt="">
+        </div>
+        <h2 class="offering__title section-title">Our Bingo Offering</h2>
+        <div class="offering-block classic">
+            <div class="offering__text">
+                <span>Our Classic Bingo Variants</span>
+                <p>To support our partners’ global distribution strategy, we provide a handful of Bingo solutions and content.</p>
+                <p>Our partner can manage and optimize the Bingo games and rooms offering with our sophisticated and flexible management system.</p>
+            </div>
+            <div class="offering__list">
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-90.png" alt="Bingo 90">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Bingo 90</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-75-25.png" alt="Bingo 75-25">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Bingo 75-25</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-75-24.png" alt="Bingo 75-24">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Bingo 75-24</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-52-5.png" alt="Bingo 52-5">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Bingo 52-5</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-80-16.png" alt="Bingo 80-16">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Bingo 80-16</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offering-block">
+            <div class="offering__text">
+                <span>Bingo Variant Factory</span>
+                <p>To maximize your player value, we understand how important it is to keep updating the Bingo content giving players a unique, fresh bingo experience. We have created our own Bingo Variant Factory, which allows our partners to easily create a new theme bingo game with just providing the desired look and feel.</p>
+            </div>
+            <div class="offering__list">
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-factory-1.png" alt="Bingo Roulette (52-5)">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Bingo Roulette<br>(52-5)</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-factory-2.png" alt="Bingo Candy (52-5)">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Bingo Candy<br>(52-5)</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-factory-3.png" alt="FlashFive (52-5)">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>FlashFive<br>(52-5)</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-factory-4.png" alt="Evens Stevens">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Evens Stevens</p>
+                    </div>
+                </div>
+                <div class="offering__item">
+                    <div class="offering__item_img">
+                        <img src="img/offering-factory-5.png" alt="Mystery Jackpot">
+                    </div>
+                    <div class="offering__item_title">
+                        <p>Mystery Jackpot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offering-block">
+            <div class="offering__text">
+                <span>The Dragonfish Bingo Network -<br> Instant Liquidity</span>
+                <p>Our experience and operational capabilities provide the perfect environment for your business to grow. So, whether you have the capacity for a standalone network or wish to join our open network and benefit from instant liquidity with Dragonfish, our fully regulated bingo software is your ideal solution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- offer block text -->
+        <section class="offer-block-text dark">
+    <div class="container">
+        <div class="vector">
+            <img class="vector-8" src="img/svg/vector/vector-8.svg" alt="">
+            <img class="vector-a" src="img/svg/vector/vector-a.svg" alt="">
+        </div>
+        <div class="offer-block-text__wrapper">
+            <div class="offer-block-text__logo">
+                <img src="img/casino-flex.png" alt="Casino Flex">
+            </div>
+            <div class="offer-block-text__text">
+                <p>Drawing on nearly two decades of experience in operating 888casino - the world’s leading casino brand - the Dragonfish team is uniquely placed to help you deliver a winning casino proposition.</p>
+                <p>The Dragonfish Casinoflex solution can work as a 'tab' or a standalone branded site, where you can offer our extensive games offer and keep enjoying the strength of our platform and services.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="offer-block-text">
+    <div class="container">
+        <div class="vector">
+            <img class="vector-10" src="img/svg/vector/vector-10.svg" alt="">
+            <img class="vector-b" src="img/svg/vector/vector-7.svg" alt="">
+        </div>
+        <div class="offer-block-text__wrapper">
+            <div class="offer-block-text__logo">
+                <img src="img/bingo-flex.png" alt="Bingo Flex">
+            </div>
+            <div class="offer-block-text__text">
+                <p>Whether you’re looking to take your gaming environment online or enhance your existing operations with a Bingo offering, you can add our Bingo rooms and the Bingo arena if required to your sites and your player account management system (PAM).</p>
+                <p>You will enjoy the ability to join the vast shared liquidity we offer across our platform and our flexible and advanced management tools. </p>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- back office -->
+        <section class="back-office">
+    <div class="container">
+        <div class="vector">
+            <img class="vector-4" src="img/svg/vector/vector-4.svg" alt="">
+        </div>
+        <div class="back-office__wrapper">
+            <div class="back-office__title">
+                <span>BACK OFFICE</span>
+            </div>
+            <div class="back-office__info">
+                <div class="back-office__text">
+                    <span>Accelerate the gaming experience</span>
+                    <p>You can step further with your offering and create the ultimate engaging gaming experience with our set of flexible back office, detailed reporting systems and promotional tools designed for your use.</p>
+                    <p>You can, for example, reward your players, build a loyalty plan, cashback campaigns, a retention engine or any other mechanism by using our advanced bonus and voucher rewards system or any of our promotional tools.</p>
+                    <p>As our partner you will be able to use our Industry leading back office with advanced operational tools as financial, risk management, support and chat hosting services, ensuring a smooth business operation. </p>
+                </div>
+                <div class="back-office__list">
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-1.png" alt="Player Account Management">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Player Account Management</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-2.png" alt="Wallet/Funds Management">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Wallet/Funds Management</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-3.png" alt="Promotions and CRM Tool">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Promotions and CRM Tool</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-4.png" alt="Reporting (DWH, BO)">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Reporting<br>(DWH, BO)</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-5.png" alt="Integration Layer">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Integration<br>Layer</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-6.png" alt="Communication Tools">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Communication<br>Tools</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-7.png" alt="Admins">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Admins</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-8.png" alt="Compliance">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Compliance</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-9.png" alt="Cashier and Payment Management">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Cashier and Payment Management</p>
+                        </div>
+                    </div>
+                    <div class="back-office__item">
+                        <div class="back-office__item_img">
+                            <img src="img/office-10.png" alt="Integrated or Internal Affiliate Systems">
+                        </div>
+                        <div class="back-office__item_title">
+                            <p>Integrated or Internal<br>Affiliate Systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- games -->
+        <section class="games">
+    <div class="container">
+        <div class="vector">
+            <img class="vector-9" src="img/svg/vector/vector-9.svg" alt="">
+            <img class="vector-3" src="img/svg/vector/vector-3.svg" alt="">
+            <img class="vector-5" src="img/svg/vector/vector-555.svg" alt="">
+        </div>
+        <div class="games__wrapper">
+            <h2 class="games__title section-title">GAMES</h2>
+            <div class="games-block">
+                <div class="games__block">
+                    <div class="games__block_wrapper">
+                        <span>Over</span>
+                        <div class="games__block_num">800 games</div>
+                        <p class="games__block_text">We have integrated with over 30 world-leading game suppliers enabling our partners to offer over 800 leading games, with new content , new games features and new providers added regularly</p>
+                    </div>
+                </div>
+                <div class="games__block">
+                    <div class="games__block_wrapper">
+                        <div class="games__block--bg"></div>
+                        <span>Over</span>
+                        <div class="games__block_num">100 games</div>
+                        <p class="games__block_text"><strong>Premium and Exclusive<br>games - Section8</strong> We offer a choice of over 100 exclusive in-house 888 games to our B2B bingo partners, created by our own Section8 leading studio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="games__brands">
+                <a href="#"><img src="img/games-brands/games-brand-1.png" alt="pariplay"></a>
+                <a href="#"><img src="img/games-brands/games-brand-2.png" alt="box"></a>
+                <a href="#"><img src="img/games-brands/games-brand-3.png" alt="netent"></a>
+                <a href="#"><img src="img/games-brands/games-brand-4.png" alt="pragmaticplay"></a>
+                <a href="#"><img src="img/games-brands/games-brand-5.png" alt="barcrest"></a>
+                <a href="#"><img src="img/games-brands/games-brand-6.png" alt="realistic"></a>
+                <a href="#"><img src="img/games-brands/games-brand-7.png" alt="1x2gaming"></a>
+                <a href="#"><img src="img/games-brands/games-brand-8.png" alt="nextgen"></a>
+                <a href="#"><img src="img/games-brands/games-brand-9.png" alt="yggdrasil"></a>
+                <a href="#"><img src="img/games-brands/games-brand-10.png" alt="skillz"></a>
+                <a href="#"><img src="img/games-brands/games-brand-11.png" alt="inspired"></a>
+                <a href="#"><img src="img/games-brands/games-brand-12.png" alt="microgaming"></a>
+                <a href="#"><img src="img/games-brands/games-brand-13.png" alt="reflex"></a>
+                <a href="#"><img src="img/games-brands/games-brand-14.png" alt="blueprint"></a>
+                <a href="#"><img src="img/games-brands/games-brand-15.png" alt="eyecon"></a>
+                <a href="#"><img src="img/games-brands/games-brand-16.png" alt="high5games"></a>
+                <a href="#"><img src="img/games-brands/games-brand-17.png" alt="ags"></a>
+                <a href="#"><img src="img/games-brands/games-brand-18.png" alt="quickpin"></a>
+                <a href="#"><img src="img/games-brands/games-brand-19.png" alt="red tiger"></a>
+                <a href="#"><img src="img/games-brands/games-brand-20.png" alt="btg"></a>
+                <a href="#"><img src="img/games-brands/games-brand-21.png" alt="igt"></a>
+                <a href="#"><img src="img/games-brands/games-brand-22.png" alt="gamevy"></a>
+                <a href="#"><img src="img/games-brands/games-brand-23.png" alt="wazdan"></a>
+                <a href="#"><img src="img/games-brands/games-brand-24.png" alt="isoftbet"></a>
+                <a href="#"><img src="img/games-brands/games-brand-25.png" alt="evolutiongaming"></a>
+                <a href="#"><img src="img/games-brands/games-brand-26.png" alt="slingo"></a>
+                <a href="#"><img src="img/games-brands/games-brand-27.png" alt="sgdigital"></a>
+                <a href="#"><img src="img/games-brands/games-brand-28.png" alt="section studio"></a>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Categories -->
+        <section class="categories">
+    <div class="container">
+        <div class="categories__wrapper">
+            <div class="categories__title">
+                <span>Categories</span>
+            </div>
+            <div class="categories__list">
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-1.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Slots games</p>
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-2.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Slingo</p>
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-3.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Instant win</p>
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-4.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Instant Virtual Sports</p>
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-5.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Table games</p>
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-6.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Live casino</p>
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-7.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Scratch cards</p>
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item_img">
+                        <object type="image/svg+xml" data="img/svg/categories/cat-8.svg"></object>
+                    </div>
+                    <div class="categories__item_title">
+                        <p>Video Bingo</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- offer clients -->
+        <section class="offer-clients">
+    <div class="container">
+        <div class="offer-clients__row">
+            <div class="offer-clients__title">
+                <span>Our Clients</span>
+            </div>
+            <div class="offer-clients__info">
+                <div class="offer-clients__text">
+                    <span>Proven and trusted mobile solution – Snow White Program</span>
+                    <p>We have recently launched our new and innovative client program known under the name of Snow White.</p>
+                    <p>In Snow White we provide our partners state-of-the-art client using Angular 10 framework based technology.</p>
+                    <p>This technology provides a fully responsive, single page application using Push technology and delivers better performance and enhanced player experience over web or native apps.</p>
+                    <p>The Snow White client is a flexible infrastructure, allowing the Dragonfish partners to choose between our ”out of the box” Vanilla solution and a fully customized bespoke application.</p>
+                </div>
+            </div>
+        </div>
+        <div class="offer-clients__row">
+            <div class="offer-clients__devices">
+                <div class="offer-clients__devices_title">
+                    <span>Supports multiple devices</span>
+                    <p>with an optimized user interface for each device</p>
+                </div>
+                <div class="offer-clients__devices devices">
+                    <div class="devices__item devices__item--web">
+                        <div class="devices__item_img">
+                            <img src="img/desktop.png" alt="">
+                        </div>
+                        <div class="devices__item_title">
+                            <p>WEB</p>
+                        </div>
+                    </div>
+                    <div class="devices__item devices__item--table">
+                        <div class="devices__item_img">
+                            <img src="img/table.png" alt="">
+                        </div>
+                        <div class="devices__item_title">
+                            <p>Table</p>
+                        </div>
+                    </div>
+                    <div class="devices__item devices__item--ios">
+                        <div class="devices__item_img">
+                            <img src="img/iphone.png" alt="">
+                        </div>
+                        <div class="devices__item_title">
+                            <p>iOs</p>
+                        </div>
+                    </div>
+                    <div class="devices__item devices__item--android">
+                        <div class="devices__item_img">
+                            <img src="img/android.png" alt="">
+                        </div>
+                        <div class="devices__item_title">
+                            <p>Android</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Added ServiCEs -->
+        <section class="added-services">
+    <div class="container">
+        <div class="added-services__wrapper">
+            <h2 class="added-services__title section-title">Value Added ServiCEs</h2>
+            <div class="added-services__list">
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-1.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Support</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-2.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Operations</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-3.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Game Management</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-4.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>CRM (optional)</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-5.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Fraud</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-6.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>E-payments</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-7.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Account Management</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-8.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Finance</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-9.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Chat Moderation</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-10.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Marketing</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-11.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Business Analytics</p>
+                    </div>
+                </div>
+                <div class="added-services__item">
+                    <div class="added-services__item_img">
+                        <object type="image/svg+xml" data="img/svg/services/services-12.svg"></object>
+                    </div>
+                    <div class="added-services__item_title">
+                        <p>Brand Operation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <!-- Responsible Gaming and Compliance -->
+<section class="offer-block-info">
+    <div class="container">
+        <div class="offer-block-info__wrapper">
+            <div class="offer-block-info__title">
+                <span>Responsible Gaming and Compliance</span>
+            </div>
+            <div class="offer-block-info__info">
+                <div class="offer-block-info__text">
+                    <span>Committed to providing responsible gaming</span>
+                    <p>At Dragonfish, we believe our primary responsibility is to provide the best online gaming entertainment for our partners. However, we also acknowledge the potential danger that gaming may pose for a small minority of people. Therefore, we strive for excellence in our responsible gaming policy and ethical conduct.</p>
+                    <p>Through education, Dragonfish actively raises awareness of gaming issues, and regularly provides staff with the tools and training necessary to ensure a responsible gaming environment. We continuously monitor our policies, generate new innovative ways to foster caring and ethical gaming, and above all, make certain our customers are safe.</p>
+                    <p>There are mandatory entry-level training and weekly refresher courses for all Customer Support staff on Responsible Gambling and techniques to assist in identifying compulsive or underage gambling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Payment Processing, Risk and Fraud -->
+<section class="offer-block-info dark">
+    <div class="container">
+        <div class="offer-block-info__wrapper">
+            <div class="offer-block-info__title">
+                <span>Payment Processing, Risk and Fraud</span>
+            </div>
+            <div class="offer-block-info__info">
+                <div class="offer-block-info__text">
+                    <p>We provide a full array of global and local online payment solutions in multiple currencies. We also offer leading third party and proprietary systems to perform KYC, AML, risk scoring, age verification and fraud detection protocols.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Support your operational needs -->
+<section class="offer-block-info">
+    <div class="container">
+        <div class="offer-block-info__wrapper">
+            <div class="offer-block-info__title">
+                <span>Support your operational needs</span>
+            </div>
+            <div class="offer-block-info__info">
+                <div class="offer-block-info__text">
+                    <span>Dragonfish enables your operation to maximize day-to-day performance</span>
+                    <p>Our comprehensive support spans telemarketing for player reactivation or deposit approvals increase, partner support, customer support and hosting services. Multi-lingual, Multi-channel, customer support is delivered by our expert teams based in Gibraltar and Antigua. Our partners also benefit from our state-of-the-art Network Operations Centre, fully resilient IT and communications infrastructure, backed by a dedicated 24/7 IT support team. Since safe gambling is one of the major focusing of our platform and operation services we have a dedicated Responsible Gaming Team, Safer Gambling, Customer Complaints teams highly versed in handling customer issues.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Key benefits -->
+        <section class="benefits">
+    <div class="container">
+        <div class="benefits__Wrapper">
+            <h2 class="benefits__title">Key benefits</h2>
+            <div class="benefits__list">
+                <div class="benefits__item">
+                    <div class="benefits__item_img">
+                        <object type="image/svg+xml" data="img/svg/benefits/benefits-1.svg"></object>
+                    </div>
+                    <div class="benefits__item_text">
+                        <p>Fast and efficient market entry</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item_img">
+                        <object type="image/svg+xml" data="img/svg/benefits/benefits-2.svg"></object>
+                    </div>
+                    <div class="benefits__item_text">
+                        <p>Fully flexible</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item_img">
+                        <object type="image/svg+xml" data="img/svg/benefits/benefits-3.svg"></object>
+                    </div>
+                    <div class="benefits__item_text">
+                        <p>Modularity</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item_img">
+                        <object type="image/svg+xml" data="img/svg/benefits/benefits-4.svg"></object>
+                    </div>
+                    <div class="benefits__item_text">
+                        <p>Multi-lingual and currency capabilities</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item_img">
+                        <object type="image/svg+xml" data="img/svg/benefits/benefits-5.svg"></object>
+                    </div>
+                    <div class="benefits__item_text">
+                        <p>+800 of top leading side games, including slots, table games and scratch card</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item_img">
+                        <object type="image/svg+xml" data="img/svg/benefits/benefits-6.svg"></object>
+                    </div>
+                    <div class="benefits__item_text">
+                        <p>Highly customisable, user-friendly interface</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item_img">
+                        <object type="image/svg+xml" data="img/svg/benefits/benefits-7.svg"></object>
+                    </div>
+                    <div class="benefits__item_text">
+                        <p>Massive jackpots, including prize pools shared across the bingo and casino network</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <!-- /.Main -->
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer-top">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="img/svg/home/logo-white.svg" alt="dragonfish">
+                    </a>
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Press releases and news</a></li>
+                    <li><a href="#">Regulation and licenses</a></li>
+                    <li><a href="#">Contact details</a></li>
+                </ul>
+                <ul class="footer__social">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <a href="https://corporate.888.com/" target="_blank" class="footer__brand"><img src="img/888.png" alt="888"></a>
+                <span class="footer__copy">© 2020 Copyright 1997 - 2020, the 888 Group. All rights reserved.</span>
+                <ul class="footer__brands">
+                    <li><a href="#"><img src="img/footer/footer-company-1.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/footer/footer-company-2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/footer/footer-company-3.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/footer/footer-company-4.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/footer/footer-company-5.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- /.Footer -->
+    <!-- Modal -->
+    <!-- <span class="back-to-top--icon" id="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+</span> -->
+<!-- Back to top -->
+<div id="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+</div>
+<!-- /Back to top -->
+    <!-- /.Modal -->
+    <!-- JS -->
+    <script src="js/libs.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+    <!-- /.JS -->
+</body>
+</html>
