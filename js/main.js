@@ -1,6 +1,7 @@
 "use strict";
 
 (function($) {
+
 	///////////////////////////
 	// Smooth scroll
 	$(".scroll a[href^='#']").on('click', function(e) {
@@ -51,6 +52,11 @@
 				$('#request').removeClass('request--bg');
 			}
 		}
+		if ($(this).scrollTop() == $(document).height()-$(window).height()) {
+			$('#back-to-top').addClass('back--bottom');
+		} else {
+			$('#back-to-top').removeClass('back--bottom');
+		}
 		// tabs
 		if (wWidth <= 768) {
 			$("#tabs").tabs();
@@ -63,12 +69,5 @@
 			scrollTop: 0
 		}, 600);
 	});
-	// $('#back-to-top').on('click', function (ev) {
-    //     $('#back-to-top').removeClass('on');
-
-    //     $('html,body').animate({scrollTop: 0}, 'slow');
-
-    //     return false;
-    // });
 })(jQuery);
 
